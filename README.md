@@ -2,6 +2,7 @@
 
 Poking the IQOS vaping device.
 
+![IQOS device](https://github.com/vaxxi/iqos/raw/master/iqos.jpg)
 
 
 ## Initial probing of the device
