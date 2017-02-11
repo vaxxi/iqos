@@ -147,6 +147,10 @@ are identical, the rest are different.
 
 
 [1] https://github.com/walac/pyusb/blob/master/docs/tutorial.rst
+
 [2] http://www.beyondlogic.org/usbnutshell/usb4.shtml
+
 [3] http://www.usbmadesimple.co.uk/ums_5.htm
+
 [4] http://newae.com/files/Hackaday_USSSSSBTalkingUSBFromPython_OFlynn.pdf
+
