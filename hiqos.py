@@ -17,8 +17,8 @@ if device.is_kernel_driver_active(1):
 device.set_configuration()
 cfg = device.get_active_configuration()
 interface_number = cfg[(0,0)].bInterfaceNumber
-alternate_settting = usb.control.get_interface(device,interface_number) 
-usb_interface = usb.util.find_descriptor(cfg, bInterfaceNumber = interface_number, bAlternateSetting = 0) 
+alternate_setting = usb.control.get_interface(device,interface_number) 
+usb_interface = usb.util.find_descriptor(cfg, bInterfaceNumber = interface_number, bAlternateSetting = alternate_setting)
 
 # get the two endpoints
 endpoint_out = usb.util.find_descriptor(usb_interface,custom_match=lambda e: usb.util.endpoint_direction(e.bEndpointAddress) == usb.util.ENDPOINT_OUT)

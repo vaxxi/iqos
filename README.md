@@ -142,4 +142,11 @@ array('B', [63, 1, 0, 211, 225, 222, 150, 83, 118, 235, 189, 189, 219, 114, 27, 
 array('B', [63, 1, 0, 6, 251, 210, 223, 205, 123, 255, 175, 249, 250, 125, 245, 190, 109, 123, 239, 126, 11, 59, 253, 250, 45, 251, 151, 124, 138, 70, 57, 197, 221, 175, 228, 99, 188, 109, 232, 117, 164, 159, 55, 247, 242, 29, 127, 237, 7, 155, 166, 153, 14, 215, 166, 126, 238, 241, 247, 122, 222, 55, 127, 103])
 ```
 
-Sadly, the strings make no sense when converted to ASCII.
+Sadly, the strings make no sense when converted to ASCII. First three bytes
+are identical, the rest are different.
+
+
+[1] https://github.com/walac/pyusb/blob/master/docs/tutorial.rst
+[2] http://www.beyondlogic.org/usbnutshell/usb4.shtml
+[3] http://www.usbmadesimple.co.uk/ums_5.htm
+[4] http://newae.com/files/Hackaday_USSSSSBTalkingUSBFromPython_OFlynn.pdf
