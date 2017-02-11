@@ -126,3 +126,20 @@ said, our device has two one way "communication ports" (the two endpoints
 listed above), one for data input at address 0x81 and one for data output at
 address 0x01.
 
+## is there anybody out there
+
+Install `python-usb`:
+
+```
+apt-get install python-usb
+```
+
+Run the attached `hiqos.py`. The device seems to alternatively return 2
+strings (further execution will keep repeating these two strings):
+
+```
+array('B', [63, 1, 0, 211, 225, 222, 150, 83, 118, 235, 189, 189, 219, 114, 27, 77, 182, 236, 156, 116, 151, 102, 175, 87, 23, 245, 108, 236, 28, 211, 188, 195, 187, 223, 197, 243, 237, 150, 246, 190, 115, 106, 127, 107, 255, 63, 233, 129, 140, 9, 243, 219, 172, 155, 189, 238, 87, 94, 4, 27, 0, 0, 0, 16])
+array('B', [63, 1, 0, 6, 251, 210, 223, 205, 123, 255, 175, 249, 250, 125, 245, 190, 109, 123, 239, 126, 11, 59, 253, 250, 45, 251, 151, 124, 138, 70, 57, 197, 221, 175, 228, 99, 188, 109, 232, 117, 164, 159, 55, 247, 242, 29, 127, 237, 7, 155, 166, 153, 14, 215, 166, 126, 238, 241, 247, 122, 222, 55, 127, 103])
+```
+
+Sadly, the strings make no sense when converted to ASCII.
